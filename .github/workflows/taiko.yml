@@ -17,6 +17,8 @@ jobs:
           node-version: '12'
       - name: install
         run: npm install
+      - name: Lint check
+        run: npm run lint-check
       - name: unit-tests
         run: npm test
 
